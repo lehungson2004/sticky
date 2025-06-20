@@ -22,6 +22,7 @@ body {
     position: fixed;
     z-index: 3;
     padding: 10px 0;
+    gap: 1.5em;
 }
 
 .logo {
@@ -46,15 +47,6 @@ body {
 
 .fa-solid {
     color: #fff;
-}
-
-.icons {
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .title-img {
@@ -229,7 +221,7 @@ body {
 }
 
 .touch-icon-tym:hover {
-    box-shadow: 0 0 20px #fff019;
+    box-shadow: 0 0 20px #fff019 !important;
 }
 
 .touch-group:hover {
@@ -452,6 +444,11 @@ body {
     border-radius: 0.5rem;
     object-fit: cover;
 }
+@media (max-width: 1440px) {
+    .icons {
+        display: none;
+    }
+}
 
 @media (max-width: 1024px) {
     .description {
@@ -479,6 +476,27 @@ body {
     .name-movie-img {
         display: block;
         font-size: 2em;
+    }
+    .search {
+        display: none !important;
+    }
+    .name-menu {
+        display: none !important;
+    }
+    .text-light {
+        display: none !important;
+    }
+    #main-user {
+        display: none !important;
+    }
+    .icons {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 6px;
     }
 }
 
@@ -509,6 +527,34 @@ body {
     }
     .new-movie{
         overflow-x: scroll;
+    }
+}
+
+@media (max-width: 425px) {
+    .touch-group {
+        display: none;
+    }
+
+    .main-container a{
+        display: none !important;
+    }
+    .hl-tags {
+        display: none;
+    }
+    .wrapper {
+        width: 100%;
+        right: 70px;
+    }
+    .main-container {
+        text-align: center;
+        right: 30px;
+    }
+    .name-movie-img {
+    font-size: 16px;
+    font-weight: bolder;
+    }
+    .main-container h3 {
+        font-size: 15.4px;
     }
 }
 
@@ -569,4 +615,72 @@ body {
     margin-bottom: 19.2px;
 }
 
+.search {
+    width: 100%;
+    height: 2.8rem;
+    line-height: 2rem;
+    padding: .4rem 2rem;
+    background-color: rgba(255, 255, 255, .08);
+    color: #fff;
+    font-size: 1em;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: .4rem;
+    border: 1px solid transparent !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input {
+    background-color: rgba(255, 255, 255, .0);
+    border: none;
+    color: #fff;
+}
+
+.search-icon {
+    font-size: 16px;
+    padding: 3px;
+    color: #fff;
+}
+
+.name-menu {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.name-menu a {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 0 .5rem;
+    white-space: nowrap;
+}
+
+.text-dowloat {
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+#main-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    padding: .5rem .8rem;
+    border: 1px solid rgba(255, 255, 255, .5);
+    text-align: center;
+}
+
+.main-color {
+    color: #000;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 1em;
+
+    
+}
 
